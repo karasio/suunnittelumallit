@@ -1,4 +1,4 @@
-package somepackage;
+package factorymethod;
 
 public class Opiskelija extends AterioivaOtus{
     @Override

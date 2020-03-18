@@ -1,4 +1,4 @@
-package somepackage;
+package factorymethod;
 
 public abstract class AterioivaOtus {
 
