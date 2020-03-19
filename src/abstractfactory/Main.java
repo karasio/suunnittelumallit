@@ -14,6 +14,6 @@ public class Main {
         Jasper jasper = new Jasper(new AdidasFactory());
 
         System.out.println("Jasper is an engineer and now he's wearing");
-        jasper = new Jasper(new BossFactory());
+        jasper.changeFactory(new BossFactory());
     }
 }

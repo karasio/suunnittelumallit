@@ -1,11 +1,21 @@
 package abstractfactory;
 
+import composite.Factory;
+
 public class Jasper {
     AbstractFactory factory;
 
     public Jasper(AbstractFactory factory) {
         this.factory = factory;
+        create();
+    }
 
+    public void changeFactory(AbstractFactory f) {
+        this.factory = f;
+        create();
+    }
+
+    private void create() {
         Cap cap;
         Jeans jeans;
         Shirt shirt;
