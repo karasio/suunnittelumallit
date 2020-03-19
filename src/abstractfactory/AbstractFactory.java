@@ -4,12 +4,12 @@ package abstractfactory;
 public interface AbstractFactory {
 
 
-    public void createJeans();
+    public Jeans createJeans();
 
-    public void createShirt();
+    public Shirt createShirt();
 
-    public void createCap();
+    public Cap createCap();
 
-    public void createShoes();
+    public Shoes createShoes();
 
 }

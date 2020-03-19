@@ -1,44 +1,27 @@
 package abstractfactory;
 
-import java.util.*;
 
-/**
- * 
- */
 public class AdidasFactory implements AbstractFactory {
 
-    /**
-     * Default constructor
-     */
     public AdidasFactory() {
     }
 
-    /**
-     * 
-     */
-    public void createJeans() {
-        // TODO implement here
+
+    public Jeans createJeans() {
+        return new AdidasJeans();
     }
 
-    /**
-     * 
-     */
-    public void createShirt() {
-        // TODO implement here
+    public Shirt createShirt() {
+        return new AdidasShirt();
     }
 
-    /**
-     * 
-     */
-    public void createCap() {
-        // TODO implement here
+
+    public Cap createCap() {
+        return new AdidasCap();
     }
 
-    /**
-     * 
-     */
-    public void createShoes() {
-        // TODO implement here
+    public Shoes createShoes() {
+        return new AdidasShoes();
     }
 
 }
