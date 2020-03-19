@@ -15,7 +15,7 @@ public class Jasper {
         jeans = factory.createJeans();
         shirt = factory.createShirt();
         shoes = factory.createShoes();
-        
+
         System.out.println(cap.print() + ", " + jeans.print() + ", " + shirt.print() + " and " + shoes.print());
     }
 }
