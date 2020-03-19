@@ -10,13 +10,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        AbstractFactory bossFactory = new BossFactory();
-        AbstractFactory adidasFactory = new AdidasFactory();
-
         System.out.println("Jasper is a student and is wearing: ");
-        Jasper jasper = new Jasper(adidasFactory);
+        Jasper jasper = new Jasper(new AdidasFactory());
 
         System.out.println("Jasper is an engineer and now he's wearing");
-        jasper = new Jasper(bossFactory);
+        jasper = new Jasper(new BossFactory());
     }
 }
