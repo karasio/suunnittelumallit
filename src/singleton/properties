@@ -1,0 +1,2 @@
+PF = singleton.PokemonFactory
+SMF = singleton.SuperMarioFactory
