@@ -40,8 +40,8 @@ public class Charizard extends PokemonState {
 
     @Override
     public String toString() {
-        return "Charmander\nHeight = " + String.format("%.2f", height) + "m Weight =  " +
-                String.format("%.2f", weight) + "kg \nHP = " + hp
-                + "\t CP=" + cp;
+        return "Charizard\nHeight = " + String.format("%.2f", height) + "m Weight = " +
+                String.format("%.2f", weight) + "kg \nCP = " + cp
+                + "\tHP=" + hp;
     }
 }

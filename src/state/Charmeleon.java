@@ -37,9 +37,9 @@ public class Charmeleon extends PokemonState {
 
     @Override
     public String toString() {
-        return "Charmeleon\nHeight = " + String.format("%.2f", height) + "m Weight =  " +
-                String.format("%.2f", weight) + "kg \nHP = " + hp
-                + "\t CP=" + cp;
+        return "Charmeleon\nHeight = " + String.format("%.2f", height) + "m Weight = " +
+                String.format("%.2f", weight) + "kg \nCP = " + cp
+                + "\t HP=" + hp;
     }
 
 }
