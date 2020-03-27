@@ -18,7 +18,7 @@ public class Main {
         Thread t = new Thread(p);
         t.start();
 
-        System.out.println("Welcome to play GUI Charmander!");
+        System.out.println("Welcome to play CLI Charmander!");
         System.out.println("Aim of the game is to evolve your Pokemon to the highest level.");
         System.out.println("You can earn candy in two ways:");
         System.out.println("Fight with a mysterious Pokemon and if you win, you get 3 candy");

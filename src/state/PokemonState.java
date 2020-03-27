@@ -10,7 +10,7 @@ public abstract class PokemonState {
     public abstract int getMaxCp();
 
     public int fight(int hp, int cp, int MAX_CP) {
-        // how will the fight end? outcome calculated with random number & combat power to max relatio
+        // how will the fight end? outcome calculated with random number & combat power to max relation
         double outcome =  Math.random() + cp/MAX_CP*0.2;
         if (outcome < 0.5) {
             System.out.println("You lost!");
