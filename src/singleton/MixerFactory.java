@@ -1,11 +1,11 @@
 package singleton;
 
-public enum Pokemon2Factory implements GameCharacterFactory{
+public enum MixerFactory implements GameCharacterFactory{
     INSTANCE;
 
-    private Pokemon2Factory() {}
+    private MixerFactory() {}
 
-    public static Pokemon2Factory getInstance() {
+    public static MixerFactory getInstance() {
         return INSTANCE;
     }
 
@@ -16,6 +16,6 @@ public enum Pokemon2Factory implements GameCharacterFactory{
 
     @Override
     public IEnemyCharacter createEnemyCharacter() {
-        return new EvilCat();
+        return new AnnoyingTurtle();
     }
 }

@@ -41,7 +41,7 @@ public class Main {
         System.out.print(" & ");
         System.out.println(ec.toString());
 
-        // the with SuperMarioFactory
+        // then with SuperMarioFactory
         try {
             c = Class.forName(properties.getProperty("SMF"));
             Method factoryMethod = c.getDeclaredMethod("getInstance");
@@ -54,6 +54,23 @@ public class Main {
         ec = factory.createEnemyCharacter();
 
         System.out.println("And the second set of characters are: ");
+        System.out.print("Main character " + mc.toString());
+        System.out.print(" & ");
+        System.out.println(ec.toString());
+
+        // enum version of Singleton -- MixerFactory
+        try {
+            c = Class.forName(properties.getProperty("MF"));
+            Method factoryMethod = c.getDeclaredMethod("getInstance");
+            factory = (GameCharacterFactory) factoryMethod.invoke(null, null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        mc = factory.createMainCharacter();
+        ec = factory.createEnemyCharacter();
+
+        System.out.println("And the third set of characters are: ");
         System.out.print("Main character " + mc.toString());
         System.out.print(" & ");
         System.out.println(ec.toString());

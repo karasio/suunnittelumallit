@@ -1,2 +1,3 @@
 PF = singleton.PokemonFactory
 SMF = singleton.SuperMarioFactory
+MF = singleton.MixerFactory
