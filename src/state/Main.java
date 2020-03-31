@@ -50,7 +50,7 @@ public class Main {
             select = ReadInput.merkki();
             switch (select) {
                 case '1':
-                    Pokemon returned = p.evolve();
+                    Pokemon returned = p.tryEvolve();
                     if (returned.getState() instanceof Charizard) {
                         System.out.println("CONGRATS! YOU WIN! Want to play again? Y/N");
                         System.out.println("" +

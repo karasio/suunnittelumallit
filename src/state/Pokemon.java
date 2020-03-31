@@ -20,7 +20,7 @@ public class Pokemon implements Runnable{
         return state.toString() + "\t\t\tCandy = " + candy;
     }
 
-    public Pokemon evolve() {
+    public Pokemon tryEvolve() {
         if (candy >= 25 && state instanceof Charmander) {
             candy = candy - 25;
             state =  new Charmeleon(random);
