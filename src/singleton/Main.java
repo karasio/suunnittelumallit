@@ -18,7 +18,7 @@ public class Main {
 
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("/Users/katriaho/IdeaProjects/suunnittelumallit/src/singleton/properties"));
+            properties.load(new FileInputStream("./src/singleton/properties"));
         } catch (Exception e) {
             System.out.println("FILE read does not work");
             e.printStackTrace();
