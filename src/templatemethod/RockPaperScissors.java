@@ -10,6 +10,7 @@ public class RockPaperScissors extends Game {
 
     @Override
     void initializeGame() {
+        System.out.println("This is Rock-Paper-Scissors!");
         playerOptions = new ArrayList<>(Arrays.asList("rock", "paper", "scissors"));
         playersChoice = new HashMap();
         playerWins = new HashMap<>();
@@ -35,6 +36,10 @@ public class RockPaperScissors extends Game {
     @Override
     void printWinner() {
         System.out.println("Calculating winner");
+        if (playersChoice.size() == 1) {
+            System.out.println("\tYou played all by yourself and 'won' with " + playersChoice.get(0));
+
+        }
         String winString = "";
         for (int i = 0; i < playersChoice.size(); i++) {
             String playerToCompareWith = playersChoice.get(i);
@@ -63,7 +68,7 @@ public class RockPaperScissors extends Game {
 //        System.out.println(winString);
         for (int k = 0; k < playerWins.size(); k++) {
             if (playerWins.get(k).equals(winString)) {
-                System.out.println("\tWinner is player number " + (k+1) + " with " + playersChoice.get(k));
+                System.out.println("Winner is player number " + (k+1) + " with " + playersChoice.get(k));
                 return;
             }
         }

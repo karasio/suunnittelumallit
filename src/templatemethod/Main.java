@@ -1,15 +1,25 @@
 package templatemethod;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Game rps = new RockPaperScissors();
-        System.out.println("With 10 players");
         rps.playOneGame(10);
         System.out.println("------------------------");
-        System.out.println("With 5 players");
         rps.playOneGame(5);
         System.out.println("------------------------");
-        System.out.println("With 2 players");
         rps.playOneGame(2);
+        System.out.println("------------------------");
+
+        Game bj = new BlackJack();
+        bj.playOneGame(5);
+        System.out.println("------------------------");
+        bj.playOneGame(2);
+        System.out.println("------------------------");
+        bj.playOneGame(4);
     }
 }
