@@ -11,11 +11,11 @@ public class Charizard extends PokemonState {
     private final static int MAX_CP = 2476;
 
 
-    public Charizard(double random) {                    // ranges from according to pokemongo.fandom.com
+    public Charizard(double random) {       // ranges from according to pokemongo.fandom.com
         height = 1.49 + random * 0.47;      // 1.49 - 1.96 m
         weight = 90.5 + random * 128;       // 90.5 - 137.5 kg
-        hp = 17 + (int)(random * 141);             // 17 - 158
-        cp = 10 + (int)(random * 2376);            // 10 - 2476
+        hp = 17 + (int)(random * 141);      // 17 - 158
+        cp = 10 + (int)(random * 2376);     // 10 - 2476
     }
 
     @Override

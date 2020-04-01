@@ -8,7 +8,7 @@ public class Charmander extends PokemonState {
     private int cp;
     private static final int MAX_CP = 840;
 
-    public Charmander(double random) {                           // ranges from according to pokemongo.fandom.com
+    public Charmander(double random) {              // ranges from according to pokemongo.fandom.com
         height = 0.45 + random * 0.31;              // 0.45 - 0.76 m
         weight = 4.96 + random * 9.35;              // 4.96 - 14.31 kg
         hp = 11 + (int)(random * 94);               // 11-105
