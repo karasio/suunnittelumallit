@@ -42,4 +42,10 @@ public class Charmander extends PokemonState {
         return MAX_CP;
     }
 
+    @Override
+    public void evolve(Pokemon p, double random) {
+        p.setState(new Charmeleon(random));
+    }
+
+
 }

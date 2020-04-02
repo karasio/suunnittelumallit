@@ -29,6 +29,11 @@ public class Charizard extends PokemonState {
     }
 
     @Override
+    public void evolve(Pokemon p, double random) {
+        System.out.println("Highest form");
+    }
+
+    @Override
     public int getHp() {
         return hp;
     }

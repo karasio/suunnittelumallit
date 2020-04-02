@@ -14,6 +14,9 @@ public class Pokemon implements Runnable{
     public PokemonState getState() {
         return state;
     }
+    public void setState(PokemonState state) {
+        this.state = state;
+    }
 
     @Override
     public String toString() {
@@ -23,12 +26,12 @@ public class Pokemon implements Runnable{
     public Pokemon tryEvolve() {
         if (candy >= 25 && state instanceof Charmander) {
             candy = candy - 25;
-            state =  new Charmeleon(random);
+            state.evolve(this, random);
             System.out.println("Pokemon evolved!");
             System.out.println(state + "\t\t\tCandy = " + candy);
         } else if (candy >= 100 && state instanceof Charmeleon) {
             candy = candy - 100;
-            state = new Charizard(random);
+            state.evolve(this, random);
             System.out.println("Pokemon evolved!");
             System.out.println(state + "\t\t\tCandy = " + candy);
         } else {

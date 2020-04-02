@@ -42,4 +42,9 @@ public class Charmeleon extends PokemonState {
                 + "\t HP=" + hp;
     }
 
+    @Override
+    public void evolve(Pokemon p, double random) {
+        p.setState(new Charizard(random));
+    }
+
 }
