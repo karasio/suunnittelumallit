@@ -9,16 +9,16 @@ public class Main {
         int[] arrayToSort = generateNumbers();
 
         System.out.println("------------------------------");
-        System.out.println("Sorted with bubble sort:");
-        context.chooseStrategy("bubble", arrayToSort);
-
-        System.out.println("------------------------------");
         System.out.println("Sorted with quick sort:");
         context.chooseStrategy("quick", arrayToSort);
 
         System.out.println("------------------------------");
         System.out.println("Sorted with merge sort:");
         context.chooseStrategy("merge", arrayToSort);
+
+        System.out.println("------------------------------");
+        System.out.println("Sorted with bubble sort:");
+        context.chooseStrategy("bubble", arrayToSort);
     }
 
     private static int[] generateNumbers() {
