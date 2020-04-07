@@ -16,6 +16,9 @@ public class Player extends Thread{
     public Player(Riddler r) {
         playerName = names[i];
         i++;
+        if (i == names.length) {
+            i = 0;
+        }
         this.r = r;
     }
 
