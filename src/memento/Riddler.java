@@ -9,7 +9,7 @@ public class Riddler {
     // SAVE MEMENTO
     public Object joinGame(Player p) {
         System.out.println(p.playerName + " memento saved - this should happen only once");
-        return new Memento((int)(1+Math.random() * 11));
+        return new Memento((int)(1+Math.random() * 10));
     }
 
     // LOAD MEMENTO

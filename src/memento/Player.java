@@ -19,12 +19,9 @@ public class Player extends Thread{
     @Override
     public void run() {
         obj = r.joinGame(this);
-        while (guess < 11) {
+        while (!endOfGame) {
             r.guess(obj, this, guess);
             guess++;
-            if (endOfGame) {
-                guess = 100;
-            }
         }
     }
 
