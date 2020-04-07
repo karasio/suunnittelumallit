@@ -10,7 +10,7 @@ public class Main {
         List<Player> players = new ArrayList<>();
 
         Riddler r = new Riddler();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 5; i++) {
             Player p = new Player(r);
             players.add(p);
             p.start();

@@ -3,16 +3,19 @@ package memento;
 // Caretaker
 public class Player extends Thread{
 
-    private String[] names = {"Janne", "Liisa", "Timo", "Bertta", "Ulrike"};
+    private String[] names = {"John", "Lisa", "Marcus", "Bertie", "Ulrike", "Sandy"};
+    private String playerName;
+
     private Object obj;
-    String playerName;
     private Riddler r;
+
     private volatile boolean endOfGame = false;
     private static int i = 0;
     private volatile int guess = 1;
 
     public Player(Riddler r) {
-        this.playerName = getPlayerName();
+        playerName = names[i];
+        i++;
         this.r = r;
     }
 
@@ -31,8 +34,6 @@ public class Player extends Thread{
     }
 
     public String getPlayerName() {
-        String name = names[i];
-        i++;
-        return name;
+        return playerName;
     }
 }
