@@ -3,7 +3,7 @@ package memento;
 // Caretaker
 public class Player extends Thread{
 
-    private String[] names = {"John", "Lisa", "Marcus", "Bertie", "Ulrike", "Sandy"};
+    private String[] names = {"John", "Lisa", "Marcus", "Bertie", "Ulrike", "Sandy", "Hanna", "Elise", "Jacques", "Simon", "Tina"};
     private String playerName;
 
     private Object obj;
