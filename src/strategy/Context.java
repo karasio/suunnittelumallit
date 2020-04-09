@@ -15,7 +15,7 @@ public class Context {
             case "quick":
                 strategy = new QuickSort();
         }
-        printNumbers(strategy.useAlgorithm(data));
+//        printNumbers(strategy.useAlgorithm(data));
         strategy.useAlgorithm(data);
         System.out.println("Comparison amount: " + formatNumbers(strategy.getCounter()));
         System.out.println("Time: " + formatNumbers(strategy.getTime()) + "ms");

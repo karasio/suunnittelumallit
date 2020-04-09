@@ -22,7 +22,7 @@ public class Main {
     }
 
     private static int[] generateNumbers() {
-        int n = 50000;
+        int n = 70000;
         int[] arrayToSort = new int[n];
         Random r = new Random();
         System.out.println("------------------------------");
