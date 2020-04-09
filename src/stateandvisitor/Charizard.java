@@ -1,6 +1,4 @@
-package state;
-
-import java.util.Random;
+package stateandvisitor;
 
 // ConcreteState3
 public class Charizard extends PokemonState {
@@ -31,6 +29,17 @@ public class Charizard extends PokemonState {
     @Override
     public void evolve(Pokemon p, double random) {
         System.out.println("Highest form");
+    }
+
+    @Override
+    public void accept(BonusVisitor v) {
+        v.visit(this);
+    }
+
+    @Override
+    public void activateBonusMode() {
+        hp = (int)(hp * 1.5);
+        cp = (int)(hp * 1.5);
     }
 
     @Override

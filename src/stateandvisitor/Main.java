@@ -1,4 +1,4 @@
-package state;
+package stateandvisitor;
 
 /*
 7.	State: Määrittele pelihahmo ja sille kolme kehitysastetta.
@@ -144,6 +144,10 @@ public class Main {
                 case '5':
                     System.out.println("Thanks for playing!");
                     System.exit(-1);
+                case '8':
+                    System.out.println("Supermode activating!");
+                    p.activateBonusMode();
+                    break;
                 default:
                     System.out.println("Your choice was not recognised, try again.");
                     break;

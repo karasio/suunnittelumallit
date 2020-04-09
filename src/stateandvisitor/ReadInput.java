@@ -1,4 +1,4 @@
-package state;
+package stateandvisitor;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

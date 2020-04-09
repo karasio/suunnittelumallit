@@ -1,4 +1,4 @@
-package state;
+package stateandvisitor;
 
 // State // TCPState
 public abstract class PokemonState {
@@ -9,6 +9,8 @@ public abstract class PokemonState {
     public abstract int getCp();
     public abstract int getMaxCp();
     public abstract void evolve(Pokemon p, double random);
+    public abstract void accept(BonusVisitor v);
+    public abstract void activateBonusMode();
 
     public int fight(int hp, int cp, int MAX_CP) {
         // how will the fight end? outcome calculated with random number & combat power to max relation

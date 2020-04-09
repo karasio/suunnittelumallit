@@ -1,4 +1,4 @@
-package state;
+package stateandvisitor;
 
 // ConcreteState2
 public class Charmeleon extends PokemonState {
@@ -47,4 +47,13 @@ public class Charmeleon extends PokemonState {
         p.setState(new Charizard(random));
     }
 
+    @Override
+    public void accept(BonusVisitor v) {
+        v.visit(this);
+    }
+    @Override
+    public void activateBonusMode() {
+        hp = (int)(hp * 1.25);
+        cp = (int)(hp * 1.25);
+    }
 }

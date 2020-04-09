@@ -1,4 +1,4 @@
-package state;
+package stateandvisitor;
 
 // Context // TCPConnection
 public class Pokemon implements Runnable{
@@ -64,5 +64,9 @@ public class Pokemon implements Runnable{
                 e.printStackTrace();
             }
         }
+    }
+
+    public void activateBonusMode() {
+        state.accept(new BonusVisitor());
     }
 }
