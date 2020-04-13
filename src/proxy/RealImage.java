@@ -1,23 +1,16 @@
 package proxy;
 
-import singleton.GameCharacterFactory;
-
 import java.io.FileInputStream;
-import java.lang.reflect.Method;
 import java.util.Properties;
 
-// On System A
 class RealImage implements Image {
     private final String filename;
     private String photo;
+    private String name;
 
-    /**
-     * Constructor
-     *
-     * @param filename
-     */
-    public RealImage(String filename) {
+    public RealImage(String filename, String name) {
         this.filename = filename;
+        this.name = name;
         // get corresponding photo from properties
         Properties properties = new Properties();
         try {
@@ -35,22 +28,16 @@ class RealImage implements Image {
         loadImageFromDisk();
     }
 
-    /**
-     * Loads the image from the disk
-     */
     private void loadImageFromDisk() {
-        System.out.println("Loading   " + filename);
+        System.out.println("Loading " + filename);
     }
 
-    /**
-     * Displays the image
-     */
     public void displayImage() {
         System.out.println(photo);
     }
 
     @Override
     public String showData() {
-        return null;
+        return name;
     }
 }

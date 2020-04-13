@@ -4,14 +4,16 @@ package proxy;
 class ProxyImage implements Image {
     private final String filename;
     private RealImage image;
+    private String name;
 
     /**
      * Constructor
      *
      * @param filename
      */
-    public ProxyImage(String filename) {
+    public ProxyImage(String filename, String name) {
         this.filename = filename;
+        this.name = name;
     }
 
     /**
@@ -19,7 +21,7 @@ class ProxyImage implements Image {
      */
     public void displayImage() {
         if (image == null) {
-            image = new RealImage(filename);
+            image = new RealImage(filename, name);
         }
         image.displayImage();
     }

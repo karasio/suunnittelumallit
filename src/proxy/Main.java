@@ -19,18 +19,20 @@ public class Main {
 
         System.out.println("Creating photoalbum and printing its contents:");
         for (int i = 0; i < 8; i++) {
-            Image image = new ProxyImage("image"+i);
+            Image image = new ProxyImage("image"+i, "Photo"+i);
             photoAlbum.add(image);
             System.out.println(image.showData());
         }
 
         System.out.println("Browsing through photo album");
         for(Image i : photoAlbum) {
+            System.out.print(i.showData() + ": ");
             i.displayImage();
         }
 
         System.out.println("Browsing photo album backwards");
         for (int i = photoAlbum.size()-1; i >= 0; i--) {
+            System.out.print(photoAlbum.get(i).showData() + ": ");
             photoAlbum.get(i).displayImage();
         }
 
