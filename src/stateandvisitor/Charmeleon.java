@@ -52,8 +52,8 @@ public class Charmeleon extends PokemonState {
         v.visit(this);
     }
     @Override
-    public void activateBonusMode() {
-        hp = (int)(hp * 1.25);
-        cp = (int)(hp * 1.25);
+    public void activateBonusMode(double bonus) {
+        hp = (int)(hp * bonus);
+        cp = (int)(hp * bonus);
     }
 }

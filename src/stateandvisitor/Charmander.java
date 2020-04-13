@@ -53,13 +53,9 @@ public class Charmander extends PokemonState {
     }
 
     @Override
-    public void activateBonusMode() {
-        System.out.println("old hp " + hp + " old cp " + cp);
-        hp = (int)(hp * 1.1);
-        System.out.println("New HP " + hp);
-        cp = (int)(cp * 1.1);
-        System.out.println("New CP " + cp);
-
+    public void activateBonusMode(double bonus) {
+        hp = (int)(hp * bonus);
+        cp = (int)(cp * bonus);
     }
 
 }
