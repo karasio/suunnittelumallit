@@ -21,7 +21,7 @@ public class MoominHouse {
         System.out.println("-------------------------------------------------------------");
         int i = 1;
         for (MoominCharacter m : characters) {
-            System.out.println(i + " one says their name is " + m.getName());
+            System.out.println(i + ". one says their name is " + m.getName());
             i++;
         }
         System.out.println("-------------------------------------------------------------");

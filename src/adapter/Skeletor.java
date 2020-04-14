@@ -1,9 +1,11 @@
 package adapter;
 
-public class Skeletor {
-    private final String NAME = "Skeletor";
+import java.util.Arrays;
 
-    public String getName() {
-        return NAME;
+public class Skeletor {
+    private String[] name = {"S", "k", "e", "l", "e", "t", "o", "r"};
+
+    public String[] getName() {
+        return name;
     }
 }
