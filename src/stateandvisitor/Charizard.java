@@ -39,7 +39,7 @@ public class Charizard extends PokemonState {
     @Override
     public void activateBonusMode(double bonus) {
         hp = (int)(hp * bonus);
-        cp = (int)(hp * bonus);
+        cp = (int)(cp * bonus);
     }
 
     @Override
