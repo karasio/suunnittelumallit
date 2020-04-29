@@ -10,4 +10,9 @@ public class DownCommand implements Command {
     public void execute() {
         screen.rollDown();
     }
+
+    @Override
+    public void addCommand(Command c) {
+        throw new RuntimeException("This command can not stack commands");
+    }
 }
